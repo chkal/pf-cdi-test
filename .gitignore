@@ -1,0 +1,10 @@
+*.classpath
+*.project
+*.settings
+*.DS_Store
+target/
+bin/
+*.iml
+*.ipr
+test-output
+generated-sources/
