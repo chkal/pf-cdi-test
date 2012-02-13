@@ -25,7 +25,7 @@ public class ConversationBean implements Serializable {
         return "/conversation.xhtml?faces-redirect=true";
 
     }
-    
+
     public String getCurrentConversationId() {
         return conversation.getId();
     }

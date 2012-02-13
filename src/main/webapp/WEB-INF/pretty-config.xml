@@ -2,11 +2,24 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://ocpsoft.com/prettyfaces/3.3.2 http://ocpsoft.com/xml/ns/prettyfaces/ocpsoft-pretty-faces-3.3.2.xsd">
 
+  <!-- FacesServlet mapping: /faces/* -->
+
+  <rewrite match="^/$" substitute="/faces/start.xhtml" redirect="302"/>
+
+  <url-mapping id="conversation">
+    <pattern value="/pretty/conversation"></pattern>
+    <view-id>/faces/conversation.xhtml</view-id>
+  </url-mapping>
+
+
+  <!-- FacesServlet mapping: *.jsf -->
+  <!-- 
   <rewrite match="^/$" substitute="/start.jsf" redirect="302"/>
 
   <url-mapping id="conversation">
     <pattern value="/pretty/conversation"></pattern>
     <view-id>/conversation.jsf</view-id>
   </url-mapping>
+   -->
 
 </pretty-config>
